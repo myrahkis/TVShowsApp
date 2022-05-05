@@ -1,54 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.PasswordField?>
-<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Line?>
-<?import javafx.scene.shape.Polyline?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="865.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
     <children>
-        <AnchorPane prefHeight="104.0" prefWidth="865.0" style="-fx-background-color: #F2E96B;">
-            <children>
-                <Label layoutX="55.0" prefHeight="87.0" prefWidth="298.0" text="TVShowsLab">
-                    <font>
-                        <Font name="Ink Free" size="53.0" />
-                    </font>
-                </Label>
-                <Button fx:id="signUpButton" layoutX="645.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #8C2727;" text="Регистрация" textFill="WHITE">
-                    <font>
-                        <Font size="17.0" />
-                    </font>
-                </Button>
-                <Line endX="100.0" layoutX="443.0" layoutY="52.0" startX="-34.000030517578125" startY="-3.814697265625E-6" />
-                <Polyline fill="#3c3e73" layoutX="594.0" layoutY="74.0" points="-50.0, -40.0, -18.600006103515625, -22.199996948242188, -49.999969482421875, -3.8000030517578125, -50.0, -40.0" strokeType="INSIDE" />
-            </children>
-        </AnchorPane>
-        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="866.0" style="-fx-background-color: #8C2727;" />
-        <Label layoutX="377.0" layoutY="166.0" prefHeight="55.0" prefWidth="111.0" text="Войти" textFill="#8c6c84">
-            <font>
-                <Font name="Segoe UI Light" size="42.0" />
-            </font>
-        </Label>
-        <TextField fx:id="loginInput" layoutX="267.0" layoutY="237.0" prefHeight="55.0" prefWidth="331.0" promptText="Логин" style="-fx-border-color: #8C6C84; -fx-border-radius: 10;">
-            <font>
-                <Font size="23.0" />
-            </font>
-        </TextField>
-        <Button fx:id="okayButton" layoutX="525.0" layoutY="383.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #8C6C84;" text="Готово" textFill="WHITE">
-            <font>
-                <Font size="15.0" />
-            </font>
-        </Button>
-        <PasswordField fx:id="passwordInput" layoutX="267.0" layoutY="311.0" prefHeight="55.0" prefWidth="331.0" promptText="Пароль" style="-fx-border-color: #8C6C84; -fx-border-radius: 10;">
-            <font>
-                <Font size="23.0" />
-            </font>
-        </PasswordField>
+      <AnchorPane layoutY="32.0" prefHeight="42.0" prefWidth="867.0" style="-fx-background-color: #8C6C84;" />
+        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #3C3E73;" />
+      <Label layoutX="464.0" layoutY="25.0" prefHeight="50.0" prefWidth="210.0" text="Тут Название">
+         <font>
+            <Font name="Segoe UI" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="83.0" prefHeight="32.0" prefWidth="74.0" text="Жанр:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="124.0" prefHeight="32.0" prefWidth="48.0" text="Год:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="167.0" prefHeight="32.0" prefWidth="125.0" text="Режиссёр:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="209.0" prefHeight="32.0" prefWidth="103.0" text="В ролях:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="316.0" layoutY="301.0" prefHeight="32.0" prefWidth="169.0" text="Оценка IMDB:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="360.0" prefHeight="32.0" prefWidth="169.0" text="Аннотация:">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="318.0" fitWidth="242.0" layoutX="42.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../java/com/example/project/Pics/breaking_bad.jpg" />
+         </image>
+      </ImageView>
     </children>
 </AnchorPane>
-        </AnchorPane>
