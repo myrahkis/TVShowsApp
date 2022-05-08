@@ -6,10 +6,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
     <children>
-      <AnchorPane layoutY="32.0" prefHeight="42.0" prefWidth="867.0" style="-fx-background-color: #8C6C84;" />
-        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #3C3E73;" />
+      <AnchorPane layoutY="32.0" prefHeight="42.0" prefWidth="867.0" style="-fx-background-color: #D9B2A9;" />
+        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" />
       <Label layoutX="464.0" layoutY="25.0" prefHeight="50.0" prefWidth="210.0" text="Тут Название">
          <font>
             <Font name="Segoe UI" size="34.0" />
