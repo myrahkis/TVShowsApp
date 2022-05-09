@@ -1,54 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
+<AnchorPane fx:id="genreTextField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ExampleOfView">
     <children>
-      <AnchorPane layoutY="32.0" prefHeight="42.0" prefWidth="867.0" style="-fx-background-color: #D9B2A9;" />
-        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" />
-      <Label layoutX="464.0" layoutY="25.0" prefHeight="50.0" prefWidth="210.0" text="Тут Название">
-         <font>
-            <Font name="Segoe UI" size="34.0" />
-         </font>
-      </Label>
-      <Label layoutX="316.0" layoutY="83.0" prefHeight="32.0" prefWidth="74.0" text="Жанр:">
-         <font>
-            <Font name="Segoe UI" size="26.0" />
-         </font>
-      </Label>
-      <Label layoutX="316.0" layoutY="124.0" prefHeight="32.0" prefWidth="48.0" text="Год:">
+      <AnchorPane layoutY="32.0" prefHeight="42.0" prefWidth="867.0" style="-fx-background-color: #D9B2A9;" AnchorPane.bottomAnchor="470.8" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="32.0">
+         <children>
+            <TextField layoutX="473.0" prefHeight="42.0" prefWidth="186.0" style="-fx-background-color: #D9B2A9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="473.0" AnchorPane.rightAnchor="207.80000000000004" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </TextField>
+         </children></AnchorPane>
+        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="510.8" />
+      <Label layoutX="316.0" layoutY="83.0" prefHeight="32.0" prefWidth="74.0" text="Жанр:" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="476.6" AnchorPane.topAnchor="83.0">
          <font>
             <Font name="Segoe UI" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="316.0" layoutY="167.0" prefHeight="32.0" prefWidth="125.0" text="Режиссёр:">
+      <Label layoutX="316.0" layoutY="132.0" prefHeight="32.0" prefWidth="48.0" text="Год:" AnchorPane.bottomAnchor="382.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="503.0" AnchorPane.topAnchor="132.0">
          <font>
             <Font name="Segoe UI" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="316.0" layoutY="209.0" prefHeight="32.0" prefWidth="103.0" text="В ролях:">
+      <Label layoutX="316.0" layoutY="318.0" prefHeight="32.0" prefWidth="169.0" text="Оценка IMDB:" AnchorPane.bottomAnchor="197.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="381.4" AnchorPane.topAnchor="317.0">
          <font>
             <Font name="Segoe UI" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="316.0" layoutY="301.0" prefHeight="32.0" prefWidth="169.0" text="Оценка IMDB:">
+      <Label layoutX="42.0" layoutY="360.0" prefHeight="32.0" prefWidth="169.0" text="Аннотация:" AnchorPane.bottomAnchor="154.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="656.4" AnchorPane.topAnchor="360.0">
          <font>
             <Font name="Segoe UI" size="26.0" />
          </font>
       </Label>
-      <Label layoutX="42.0" layoutY="360.0" prefHeight="32.0" prefWidth="169.0" text="Аннотация:">
-         <font>
-            <Font name="Segoe UI" size="26.0" />
-         </font>
-      </Label>
-      <ImageView fitHeight="318.0" fitWidth="242.0" layoutX="42.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="318.0" fitWidth="242.0" layoutX="41.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="196.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="587.3084411621094" AnchorPane.topAnchor="31.600000000000023">
          <image>
             <Image url="@../../../../java/com/example/project/Pics/breaking_bad.jpg" />
          </image>
       </ImageView>
+      <TextField layoutX="401.0" layoutY="83.0" prefHeight="26.0" prefWidth="448.0" AnchorPane.bottomAnchor="423.0" AnchorPane.leftAnchor="401.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="83.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="yearTextField" layoutX="379.0" layoutY="132.0" prefHeight="26.0" prefWidth="471.0" AnchorPane.bottomAnchor="374.0" AnchorPane.leftAnchor="377.8" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="132.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="directorTextField" layoutX="452.0" layoutY="181.0" prefHeight="26.0" prefWidth="397.0" AnchorPane.bottomAnchor="325.0" AnchorPane.leftAnchor="451.4" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="181.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="actorsTextFeild" layoutX="434.0" layoutY="235.0" prefHeight="76.0" prefWidth="418.0" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="430.6" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="232.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="ratingTextField" layoutX="497.0" layoutY="318.0" prefHeight="26.0" prefWidth="354.0" AnchorPane.bottomAnchor="188.0" AnchorPane.leftAnchor="494.6" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="317.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="annotationTextField" layoutX="42.0" layoutY="398.0" prefHeight="104.0" prefWidth="806.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="41.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="398.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="316.0" layoutY="232.0" prefHeight="32.0" prefWidth="103.0" text="В ролях:" AnchorPane.bottomAnchor="282.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="447.8" AnchorPane.topAnchor="232.0">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="185.0" prefHeight="32.0" prefWidth="125.0" text="Режиссёр:" AnchorPane.bottomAnchor="333.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="425.4" AnchorPane.topAnchor="181.0">
+         <font>
+            <Font name="Segoe UI" size="26.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

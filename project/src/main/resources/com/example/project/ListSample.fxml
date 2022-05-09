@@ -6,22 +6,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="546.0" prefWidth="867.0" style="-fx-background-color: #F2F2F2;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.ListSample">
     <children>
-        <AnchorPane layoutY="-1.0" prefHeight="22.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" />
-      <AnchorPane layoutX="1.0" layoutY="21.0" prefHeight="58.0" prefWidth="867.0" style="-fx-background-color: #CEDEF2;" AnchorPane.bottomAnchor="467.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="21.0">
+        <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="22.0" prefWidth="873.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="523.6" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <AnchorPane layoutX="1.0" layoutY="21.0" prefHeight="58.0" prefWidth="867.0" style="-fx-background-color: #CEDEF2;" AnchorPane.bottomAnchor="467.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
          <children>
-              <Label layoutX="272.0" layoutY="13.0" prefHeight="32.0" prefWidth="191.0" text="Список (поиск):" textFill="#0d0d0d">
+              <Label fx:id="list" layoutX="272.0" layoutY="13.0" prefHeight="32.0" prefWidth="191.0" text="Список (поиск):" textFill="#0d0d0d" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="272.0" AnchorPane.rightAnchor="403.8" AnchorPane.topAnchor="13.0">
                   <font>
                       <Font name="Segoe UI" size="26.0" />
                   </font>
               </Label>
-            <Button layoutX="561.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Добавить" textFill="#f2f2f2">
+            <Button fx:id="addButton" layoutX="561.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Добавить" textFill="#f2f2f2" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="561.0" AnchorPane.rightAnchor="199.6" AnchorPane.topAnchor="9.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="720.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Удалить" textFill="#f2f2f2">
+            <Button fx:id="deleteButton" layoutX="720.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Удалить" textFill="#f2f2f2" AnchorPane.bottomAnchor="9.0" AnchorPane.leftAnchor="720.0" AnchorPane.rightAnchor="40.599999999999994" AnchorPane.topAnchor="9.0">
                <font>
                   <Font size="18.0" />
                </font>
@@ -29,19 +29,19 @@
          </children>
       </AnchorPane>
       <Slider layoutX="838.0" layoutY="93.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="14.0" />
-      <AnchorPane layoutY="78.0" prefHeight="470.0" prefWidth="200.0" style="-fx-background-color: #2A708C;">
+      <AnchorPane layoutY="78.0" prefHeight="470.0" prefWidth="200.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="667.0" AnchorPane.topAnchor="78.0">
          <children>
-            <Button layoutX="9.0" layoutY="99.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #CEDEF2;" text="Просмотрено" textFill="#0d0d0d">
+            <Button fx:id="watchedButton" layoutX="9.0" layoutY="99.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #CEDEF2;" text="Просмотрено" textFill="#0d0d0d" AnchorPane.bottomAnchor="321.0" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.400000000000006" AnchorPane.topAnchor="99.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="8.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Заброшено" textFill="#0d0d0d">
+            <Button fx:id="stopWatchingButton" layoutX="8.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Заброшено" textFill="#0d0d0d" AnchorPane.bottomAnchor="219.99999999999997" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.400000000000006" AnchorPane.topAnchor="200.0">
                <font>
                   <Font size="18.0" />
                </font>
             </Button>
-            <Button layoutX="8.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Смотрю" textFill="#0d0d0d">
+            <Button fx:id="watchingButton" layoutX="8.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Смотрю" textFill="#0d0d0d" AnchorPane.bottomAnchor="122.99999999999997" AnchorPane.leftAnchor="9.0" AnchorPane.rightAnchor="9.400000000000006" AnchorPane.topAnchor="297.0">
                <font>
                   <Font size="18.0" />
                </font>

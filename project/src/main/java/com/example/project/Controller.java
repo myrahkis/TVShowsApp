@@ -30,7 +30,11 @@ public class Controller {
     @FXML
     void initialize() {
         okayButton.setOnAction(actionEvent -> {
-            System.out.println("Вы нажали на кнопку");
+            System.out.println("Вы нажали на кнопку Готово");
+        });
+
+        signUpButton.setOnAction(actionEvent -> {
+            System.out.println("Вы нажали на кнопку регистрации");
         });
     }
 
