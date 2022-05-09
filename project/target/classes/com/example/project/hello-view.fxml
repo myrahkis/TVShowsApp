@@ -38,7 +38,7 @@
             <Font size="23.0" />
          </font>
       </TextField>
-      <Button fx:id="okayButton" layoutX="525.0" layoutY="383.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0D0D0D;" text="Готово" textFill="WHITE" AnchorPane.bottomAnchor="131.8" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="383.0">
+      <Button fx:id="okayButton" layoutX="525.0" layoutY="383.0" mnemonicParsing="false" onAction="#switchToExampleOfView" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0D0D0D;" text="Готово" textFill="WHITE" AnchorPane.bottomAnchor="131.8" AnchorPane.leftAnchor="525.0" AnchorPane.rightAnchor="268.0" AnchorPane.topAnchor="383.0">
          <font>
             <Font size="15.0" />
          </font>

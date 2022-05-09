@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -18,7 +19,10 @@
                </font>
             </TextField>
          </children></AnchorPane>
-        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="510.8" />
+        <AnchorPane layoutY="511.0" prefHeight="35.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="510.8">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="5.0" mnemonicParsing="false" onAction="#switchToHelloView" style="-fx-background-color: #D9B2A9;" text="Назад" />
+         </children></AnchorPane>
       <Label layoutX="316.0" layoutY="83.0" prefHeight="32.0" prefWidth="74.0" text="Жанр:" AnchorPane.bottomAnchor="431.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="476.6" AnchorPane.topAnchor="83.0">
          <font>
             <Font name="Segoe UI" size="26.0" />
