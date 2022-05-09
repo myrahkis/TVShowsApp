@@ -51,8 +51,8 @@ public class helloViewController {
     private Scene scene;
     private Parent root;
 
-    public void switchToExampleOfView(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ExampleOfView.fxml")));
+    public void switchToListSample(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ListSample.fxml")));
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);

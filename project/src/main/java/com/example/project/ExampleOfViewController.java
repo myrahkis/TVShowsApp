@@ -14,6 +14,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -46,6 +48,9 @@ public class ExampleOfViewController {
     @FXML
     private Button backButton;
 
+    @FXML
+    private ImageView pictureView;
+
 //    @FXML
 //    void initialize() {
 //        backButton.setOnAction(actionEvent -> {
@@ -64,6 +69,5 @@ public class ExampleOfViewController {
         stage.setScene(scene);
         stage.show();
     }
-
 }
 
