@@ -7,7 +7,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 
-public class ExampleOfView {
+public class ExampleOfViewController {
 
     @FXML
     private ResourceBundle resources;
