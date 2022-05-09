@@ -16,6 +16,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 
 public class ListSampleController {
@@ -54,8 +55,21 @@ public class ListSampleController {
 
     String currentTVShow;
 
+//    public void initialize() {
+//        listOfTVShows.getItems().addAll(name);
+//    }
+
     public void initialize() {
         listOfTVShows.getItems().addAll(name);
+
+        listOfTVShows.getSelectionModel().selectedIndexProperty().addListener(new ChangeListener<Number>() {
+            @Override
+            public void changed(ObservableValue<? extends Number> observableValue, Number number, Number t1) {
+                currentTVShow = listOfTVShows.getSelectionModel().getSelectedItem();
+
+//                System.out.println(currentTVShow);
+            }
+        });
     }
 
 //    @FXML
@@ -86,6 +100,14 @@ public class ListSampleController {
     private Parent root;
 
     public void switchToHelloView(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public void switchToExampleOfView(MouseEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
