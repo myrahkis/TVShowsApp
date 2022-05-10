@@ -18,7 +18,7 @@
                   <Font name="Ink Free" size="53.0" />
                </font>
             </Label>
-            <Button fx:id="signUpButton" layoutX="645.0" layoutY="33.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #2A708C;" text="Регистрация" textFill="WHITE" AnchorPane.bottomAnchor="32.6" AnchorPane.rightAnchor="41.599999999999994">
+            <Button fx:id="signUpButton" layoutX="645.0" layoutY="33.0" mnemonicParsing="false" onAction="#switchToRegistrationScene" prefHeight="38.0" prefWidth="178.0" style="-fx-background-color: #2A708C;" text="Регистрация" textFill="WHITE" AnchorPane.bottomAnchor="32.6" AnchorPane.rightAnchor="41.599999999999994">
                <font>
                   <Font size="17.0" />
                </font>

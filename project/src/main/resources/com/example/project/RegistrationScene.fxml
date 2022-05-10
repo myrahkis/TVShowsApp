@@ -29,7 +29,7 @@
                 <Font size="23.0" />
             </font>
         </TextField>
-        <Button fx:id="okaySignUpButton" layoutX="636.0" layoutY="371.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0D0D0D;" text="Готово" textFill="WHITE" AnchorPane.bottomAnchor="143.8" AnchorPane.rightAnchor="157.0">
+        <Button fx:id="okaySignUpButton" layoutX="636.0" layoutY="371.0" mnemonicParsing="false" onAction="#switchToListSample" prefHeight="26.0" prefWidth="72.0" style="-fx-background-color: #0D0D0D;" text="Готово" textFill="WHITE" AnchorPane.bottomAnchor="143.8" AnchorPane.rightAnchor="157.0">
             <font>
                 <Font size="15.0" />
             </font>
