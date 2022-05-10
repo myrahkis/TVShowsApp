@@ -11,7 +11,7 @@
     <children>
         <AnchorPane prefHeight="104.0" prefWidth="865.0" style="-fx-background-color: #CEDEF2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Label layoutX="283.0" prefHeight="87.0" prefWidth="298.0" text="TVShowsLab" AnchorPane.bottomAnchor="16.799999999999997" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="283.6" AnchorPane.topAnchor="0.0">
+                <Label layoutX="283.0" prefHeight="87.0" prefWidth="298.0" text="TVShowsLab" AnchorPane.bottomAnchor="16.799999999999997" AnchorPane.rightAnchor="283.6" AnchorPane.topAnchor="0.0">
                     <font>
                         <Font name="Ink Free" size="53.0" />
                     </font>
@@ -24,7 +24,7 @@
                 <Font name="Segoe UI Light" size="29.0" />
             </font>
         </Label>
-        <TextField fx:id="signUpName" layoutX="151.0" layoutY="201.0" prefHeight="55.0" prefWidth="237.0" promptText="Имя" style="-fx-border-color: #0D0D0D; -fx-border-radius: 10;" AnchorPane.bottomAnchor="289.8" AnchorPane.rightAnchor="477.0">
+        <TextField fx:id="signUpName" layoutX="151.0" layoutY="201.0" prefHeight="55.0" prefWidth="237.0" promptText="Имя" style="-fx-border-color: #0D0D0D; -fx-background-color: transparent; -fx-border-width: 0 0 2 0;" AnchorPane.bottomAnchor="289.8" AnchorPane.rightAnchor="477.0">
             <font>
                 <Font size="23.0" />
             </font>
@@ -34,13 +34,13 @@
                 <Font size="15.0" />
             </font>
         </Button>
-      <ChoiceBox fx:id="signUpSexChoice" layoutX="151.0" layoutY="283.0" prefHeight="55.0" prefWidth="238.0" AnchorPane.bottomAnchor="207.8" AnchorPane.rightAnchor="475.6" />
-      <TextField fx:id="signUpLastName" layoutX="470.0" layoutY="201.0" prefHeight="55.0" prefWidth="237.0" promptText="Фамилия" style="-fx-border-color: #0D0D0D; -fx-border-radius: 10;" AnchorPane.bottomAnchor="289.8" AnchorPane.rightAnchor="157.4">
+      <ChoiceBox fx:id="signUpSexChoice" layoutX="151.0" layoutY="283.0" prefHeight="55.0" prefWidth="238.0" style="-fx-background-color: transparent; -fx-border-color: #0D0D0D; -fx-border-width: 0 0 2 0;" AnchorPane.bottomAnchor="207.8" AnchorPane.rightAnchor="475.6" />
+      <TextField fx:id="signUpLastName" layoutX="470.0" layoutY="201.0" prefHeight="55.0" prefWidth="237.0" promptText="Фамилия" style="-fx-border-color: #0D0D0D; -fx-background-color: transparent; -fx-border-width: 0 0 2 0;" AnchorPane.bottomAnchor="289.8" AnchorPane.rightAnchor="157.4">
          <font>
             <Font size="23.0" />
          </font>
       </TextField>
-      <TextField fx:id="signUpEmail" layoutX="470.0" layoutY="283.0" prefHeight="55.0" prefWidth="237.0" promptText="Эл. почта" style="-fx-border-color: #0D0D0D; -fx-border-radius: 10;" AnchorPane.bottomAnchor="207.8" AnchorPane.rightAnchor="157.4">
+      <TextField fx:id="signUpEmail" layoutX="470.0" layoutY="283.0" prefHeight="55.0" prefWidth="237.0" promptText="Эл. почта" style="-fx-border-color: #0D0D0D; -fx-background-color: transparent; -fx-border-width: 0 0 2 0;" AnchorPane.bottomAnchor="207.8" AnchorPane.rightAnchor="157.4">
          <font>
             <Font size="23.0" />
          </font>

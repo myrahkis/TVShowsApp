@@ -11,7 +11,7 @@
     <children>
         <AnchorPane prefHeight="104.0" prefWidth="865.0" style="-fx-background-color: #CEDEF2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
             <children>
-                <Label layoutX="283.0" prefHeight="87.0" prefWidth="298.0" text="TVShowsLab" AnchorPane.bottomAnchor="16.799999999999997" AnchorPane.leftAnchor="283.0" AnchorPane.rightAnchor="283.6" AnchorPane.topAnchor="0.0">
+                <Label layoutX="283.0" prefHeight="87.0" prefWidth="298.0" text="TVShowsLab" AnchorPane.bottomAnchor="16.799999999999997" AnchorPane.rightAnchor="283.6" AnchorPane.topAnchor="0.0">
                     <font>
                         <Font name="Ink Free" size="53.0" />
                     </font>
