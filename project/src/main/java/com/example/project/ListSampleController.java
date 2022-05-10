@@ -13,11 +13,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ListSampleController {
@@ -74,6 +72,13 @@ public class ListSampleController {
     private TextField name;
 
     @FXML
+    private AnchorPane scenePane;
+
+    private Stage stage;
+    private Scene scene;
+    private Parent root;
+
+    @FXML
     void addNameToWatching(MouseEvent event) {
         listOfWatching.getItems().add(name.getText());
     }
@@ -121,6 +126,28 @@ public class ListSampleController {
         listOfStoppedWatching.getItems().clear();
     }
 
+    @FXML
+    void logout(ActionEvent event) {
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Выход");
+        alert.setHeaderText("Вы собираетесь выйти!");
+        alert.setContentText("Вы уверены, что хотите выйти?");
+
+        if (alert.showAndWait().get() == ButtonType.OK) {
+            stage = (Stage) scenePane.getScene().getWindow();
+            System.out.println("Вы вышли из приложения!");
+            stage.close();
+        }
+    }
+
+//    public void switchToHelloView(ActionEvent event) throws IOException {
+//        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
+//        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+//        scene = new Scene(root);
+//        stage.setScene(scene);
+//        stage.show();
+//    }
+
 //    String[] name = {"Breaking bad", "House, M.D.", "Stranger Things"};
 //
 //    String currentTVShow;
@@ -164,17 +191,5 @@ public class ListSampleController {
 //            System.out.println("Вы нажали на кнопку Смотрю");
 //        });
 //    }
-
-    private Stage stage;
-    private Scene scene;
-    private Parent root;
-
-    public void switchToHelloView(ActionEvent event) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
-        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
-        scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
 }
 
