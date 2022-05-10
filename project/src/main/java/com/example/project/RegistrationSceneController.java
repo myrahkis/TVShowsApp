@@ -3,12 +3,13 @@ package com.example.project;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class RegistrationSceneController {
+public class RegistrationSceneController implements Initializable {
 
     @FXML
     private ResourceBundle resources;
@@ -20,22 +21,21 @@ public class RegistrationSceneController {
     private Button okaySignUpButton;
 
     @FXML
-    private PasswordField signUpEmail;
+    private TextField signUpEmail;
 
     @FXML
-    private PasswordField signUpLastName;
+    private TextField signUpLastName;
 
     @FXML
     private TextField signUpName;
 
     @FXML
-    private ChoiceBox<?> signUpSexChoice;
+    private ChoiceBox<String> signUpSexChoice;
 
+    private final String[] sex = {"female", "male"};
 
-
-//    @FXML
-//    void initialize() {
-//
-//    }
-
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        signUpSexChoice.getItems().addAll(sex);
+    }
 }
