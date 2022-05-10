@@ -3,7 +3,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
@@ -12,48 +14,102 @@
         <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="22.0" prefWidth="873.0" style="-fx-background-color: #2A708C;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane layoutX="1.0" layoutY="21.0" prefHeight="58.0" prefWidth="867.0" style="-fx-background-color: #CEDEF2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
          <children>
-              <Label fx:id="list" layoutX="272.0" layoutY="13.0" prefHeight="32.0" prefWidth="191.0" text="Список:" textFill="#0d0d0d" AnchorPane.topAnchor="13.0">
+              <Label fx:id="list" layoutX="7.0" layoutY="13.0" prefHeight="32.0" prefWidth="372.0" text="Введите название, чтобы пополнить список:" textFill="#0d0d0d" AnchorPane.topAnchor="13.0">
                   <font>
-                      <Font name="Segoe UI" size="26.0" />
+                      <Font name="Segoe UI" size="18.0" />
                   </font>
               </Label>
-            <Button fx:id="addButton" layoutX="561.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Добавить" textFill="#f2f2f2" AnchorPane.topAnchor="9.0">
+            <TextField fx:id="name" layoutX="379.0" layoutY="10.0" prefHeight="30.0" prefWidth="154.0" promptText="Name, Year">
                <font>
                   <Font size="18.0" />
                </font>
-            </Button>
-            <Button fx:id="deleteButton" layoutX="720.0" layoutY="9.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="106.0" style="-fx-background-color: #2A708C;" text="Удалить" textFill="#f2f2f2" AnchorPane.topAnchor="9.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            </TextField>
          </children>
       </AnchorPane>
-      <AnchorPane layoutY="78.0" prefHeight="470.0" prefWidth="200.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="78.0">
+      <AnchorPane layoutY="80.0" prefHeight="466.0" prefWidth="867.0" style="-fx-background-color: #2A708C;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="80.0">
          <children>
-            <Button fx:id="watchedButton" layoutX="9.0" layoutY="99.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="181.0" style="-fx-background-color: #CEDEF2;" text="Просмотрено" textFill="#0d0d0d" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="99.0">
+            <Button fx:id="exitButton" layoutX="14.0" layoutY="421.0" mnemonicParsing="false" onAction="#switchToHelloView" prefHeight="32.0" prefWidth="60.0" style="-fx-background-color: #CEDEF2;" text="Выйти" textFill="#0d0d0d" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="421.0">
                <font>
-                  <Font size="18.0" />
+                  <Font size="14.0" />
                </font>
             </Button>
-            <Button fx:id="stopWatchingButton" layoutX="8.0" layoutY="200.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Заброшено" textFill="#0d0d0d" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="200.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="watchingButton" layoutX="8.0" layoutY="297.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="182.0" style="-fx-background-color: #CEDEF2;" text="Смотрю" textFill="#0d0d0d" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="297.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-            <Button fx:id="exitButton" layoutX="14.0" layoutY="413.0" mnemonicParsing="false" onAction="#switchToHelloView" prefHeight="40.0" prefWidth="79.0" style="-fx-background-color: #CEDEF2;" text="Выйти" textFill="#0d0d0d" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="413.0">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
+            <TabPane layoutX="172.0" layoutY="2.0" prefHeight="466.0" prefWidth="696.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0">
+              <tabs>
+                <Tab text="Смотрю">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="466.0" prefWidth="634.0">
+                           <children>
+                              <ListView fx:id="listOfWatching" editable="true" prefHeight="466.0" prefWidth="508.0" style="-fx-background-color: #F2F2F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="deleteButtonWatching" layoutX="564.0" layoutY="125.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="301.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="125.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="addButtonWatching" layoutX="561.0" layoutY="51.0" mnemonicParsing="false" onMouseClicked="#addNameToWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="375.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="51.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="clearWatching" layoutX="564.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#clearWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="226.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="200.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Просмотрено">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="listOfWatched" prefHeight="466.0" prefWidth="558.0" style="-fx-background-color: #F2F2F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="deleteButtonWatched" layoutX="568.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromWatched" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="301.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="125.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="addButtonWatched" layoutX="565.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#addNameToWatched" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="375.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="51.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="clearWatched" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearWatched" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="226.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="200.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Заброшено">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <ListView fx:id="listOfStoppedWatching" prefHeight="466.0" prefWidth="624.0" style="-fx-background-color: #F2F2F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="0.0" />
+                              <Button fx:id="deleteButtonStoppedWatching" layoutX="574.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromStoppedWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="301.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="125.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="addButtonStoppedWatching" layoutX="571.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#addNameToStoppedWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="375.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="51.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="clearStoppedWatching" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearStoppedWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="226.4" AnchorPane.leftAnchor="564.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="200.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
          </children>
       </AnchorPane>
-      <ListView fx:id="listOfTVShows" editable="true" layoutX="200.0" layoutY="79.0" prefHeight="468.0" prefWidth="623.0" style="-fx-background-color: #F2F2F2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="43.799999999999955" AnchorPane.topAnchor="80.0" />
-      <ScrollBar layoutX="838.0" layoutY="86.0" orientation="VERTICAL" prefHeight="453.0" prefWidth="14.0" AnchorPane.bottomAnchor="6.399999999999977" AnchorPane.rightAnchor="14.6" AnchorPane.topAnchor="86.0" />
     </children>
 </AnchorPane>
