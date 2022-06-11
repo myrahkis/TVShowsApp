@@ -1,7 +1,11 @@
 package com.example.project;
 
+import java.io.BufferedWriter;
 import java.io.IOException;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
@@ -19,7 +23,6 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class ListSampleController {
-
     @FXML
     private ResourceBundle resources;
 
@@ -60,13 +63,13 @@ public class ListSampleController {
     private Button exitButton;
 
     @FXML
-    private ListView<String> listOfStoppedWatching;
+    private TableView<?> listOfWatching;
 
     @FXML
-    private ListView<String> listOfWatched;
+    private TableView<?> listOfWatched;
 
     @FXML
-    private ListView<String> listOfWatching;
+    private TableView<?> listOfStoppedWatching;
 
     @FXML
     private TextField name;
@@ -139,6 +142,7 @@ public class ListSampleController {
             stage.close();
         }
     }
+}
 
 //    public void switchToHelloView(ActionEvent event) throws IOException {
 //        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello-view.fxml")));
