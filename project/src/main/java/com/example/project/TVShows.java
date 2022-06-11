@@ -5,12 +5,12 @@ import javafx.beans.property.SimpleStringProperty;
 
 public class TVShows {
     private SimpleStringProperty name;
-    private SimpleIntegerProperty year;
+    private SimpleStringProperty year;
     private SimpleStringProperty genre;
 
-    public TVShows(String name, int year, String genre) {
+    public TVShows(String name, String  year, String genre) {
         this.name = new SimpleStringProperty(name);
-        this.year = new SimpleIntegerProperty(year);
+        this.year = new SimpleStringProperty(year);
         this.genre = new SimpleStringProperty(genre);
     }
 
@@ -22,12 +22,12 @@ public class TVShows {
         this.name = new SimpleStringProperty(name);
     }
 
-    public int getYear() {
+    public String getYear() {
         return year.get();
     }
 
-    public void setYear(int year) {
-        this.year = new SimpleIntegerProperty(year);
+    public void setYear(String year) {
+        this.year = new SimpleStringProperty(year);
     }
 
     public String getGenre() {

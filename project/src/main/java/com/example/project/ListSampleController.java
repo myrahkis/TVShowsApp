@@ -9,6 +9,7 @@ import java.nio.file.Paths;
 import java.util.Objects;
 import java.util.ResourceBundle;
 
+import com.example.project.Pics.MainController;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -137,7 +138,7 @@ public class ListSampleController implements Initializable {
 
     @FXML
     void addNameToWatching(MouseEvent event) {
-        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        TVShows tvShows = new TVShows(name.getText(), year.getText(), genre.getText());
         listOfWatching.getItems().add(tvShows);
     }
 
@@ -149,7 +150,7 @@ public class ListSampleController implements Initializable {
 
     @FXML
     void addNameToWatched(MouseEvent event) {
-        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        TVShows tvShows = new TVShows(name.getText(), year.getText(), genre.getText());
         listOfWatched.getItems().add(tvShows);
     }
 
@@ -161,7 +162,7 @@ public class ListSampleController implements Initializable {
 
     @FXML
     void addNameToStoppedWatching(MouseEvent event) {
-        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        TVShows tvShows = new TVShows(name.getText(), year.getText(), genre.getText());
         listOfStoppedWatching.getItems().add(tvShows);
     }
 
