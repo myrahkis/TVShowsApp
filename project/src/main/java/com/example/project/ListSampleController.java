@@ -14,15 +14,17 @@ import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ListSampleController {
+public class ListSampleController implements Initializable {
     @FXML
     private ResourceBundle resources;
 
@@ -63,40 +65,40 @@ public class ListSampleController {
     private Button exitButton;
 
     @FXML
-    private TableView<?> listOfWatching;
+    private TableView<TVShows> listOfWatching;
 
     @FXML
-    private TableView<?> listOfWatched;
+    private TableView<TVShows> listOfWatched;
 
     @FXML
-    private TableView<?> listOfStoppedWatching;
+    private TableView<TVShows> listOfStoppedWatching;
 
     @FXML
-    private TableColumn<?, ?> columnGenreStopped;
+    private TableColumn<TVShows, String> columnGenreStopped;
 
     @FXML
-    private TableColumn<?, ?> columnGenreWatched;
+    private TableColumn<TVShows, String> columnGenreWatched;
 
     @FXML
-    private TableColumn<?, ?> columnGenreWatching;
+    private TableColumn<TVShows, String> columnGenreWatching;
 
     @FXML
-    private TableColumn<?, ?> columnNameStopped;
+    private TableColumn<TVShows, String> columnNameStopped;
 
     @FXML
-    private TableColumn<?, ?> columnNameWatched;
+    private TableColumn<TVShows, String> columnNameWatched;
 
     @FXML
-    private TableColumn<?, ?> columnNameWatching;
+    private TableColumn<TVShows, String> columnNameWatching;
 
     @FXML
-    private TableColumn<?, ?> columnYearStopped;
+    private TableColumn<TVShows, Integer> columnYearStopped;
 
     @FXML
-    private TableColumn<?, ?> columnYearWatched;
+    private TableColumn<TVShows, Integer> columnYearWatched;
 
     @FXML
-    private TableColumn<?, ?> columnYearWatching;
+    private TableColumn<TVShows, Integer> columnYearWatching;
 
     @FXML
     private TextField name;
@@ -114,38 +116,60 @@ public class ListSampleController {
     private Scene scene;
     private Parent root;
 
-    @FXML
-    void addNameToWatching(MouseEvent event) {
-        listOfWatching.getItems().add(name.getText());
+    // initializing columns
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        // watching
+        columnNameWatching.setCellValueFactory(new PropertyValueFactory<>("name"));
+        columnYearWatching.setCellValueFactory(new PropertyValueFactory<>("year"));
+        columnGenreWatching.setCellValueFactory(new PropertyValueFactory<>("genre"));
+
+        // watched
+        columnNameWatched.setCellValueFactory(new PropertyValueFactory<>("name"));
+        columnYearWatched.setCellValueFactory(new PropertyValueFactory<>("year"));
+        columnGenreWatched.setCellValueFactory(new PropertyValueFactory<>("genre"));
+
+        //stopped watching
+        columnNameStopped.setCellValueFactory(new PropertyValueFactory<>("name"));
+        columnYearStopped.setCellValueFactory(new PropertyValueFactory<>("year"));
+        columnGenreStopped.setCellValueFactory(new PropertyValueFactory<>("genre"));
     }
 
     @FXML
-    void deleteNameFromWatching(MouseEvent event) {
-        int selectedTVShow = listOfWatching.getSelectionModel().getSelectedIndex();
-        listOfWatching.getItems().remove(selectedTVShow);
+    void addNameToWatching(MouseEvent event) {
+        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        listOfWatching.getItems().add(tvShows);
     }
+
+//    @FXML
+//    void deleteNameFromWatching(MouseEvent event) {
+//        int selectedTVShow = listOfWatching.getSelectionModel().getSelectedIndex();
+//        listOfWatching.getItems().remove(selectedTVShow);
+//    }
 
     @FXML
     void addNameToWatched(MouseEvent event) {
-        listOfWatched.getItems().add(name.getText());
+        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        listOfWatched.getItems().add(tvShows);
     }
 
-    @FXML
-    void deleteNameFromWatched(MouseEvent event) {
-        int selectedTVShow = listOfWatched.getSelectionModel().getSelectedIndex();
-        listOfWatched.getItems().remove(selectedTVShow);
-    }
+//    @FXML
+//    void deleteNameFromWatched(MouseEvent event) {
+//        int selectedTVShow = listOfWatched.getSelectionModel().getSelectedIndex();
+//        listOfWatched.getItems().remove(selectedTVShow);
+//    }
 
     @FXML
     void addNameToStoppedWatching(MouseEvent event) {
-        listOfStoppedWatching.getItems().add(name.getText());
+        TVShows tvShows = new TVShows(name.getText(), Integer.parseInt(year.getText()), genre.getText());
+        listOfStoppedWatching.getItems().add(tvShows);
     }
 
-    @FXML
-    void deleteNameFromStoppedWatching(MouseEvent event) {
-        int selectedTVShow = listOfStoppedWatching.getSelectionModel().getSelectedIndex();
-        listOfStoppedWatching.getItems().remove(selectedTVShow);
-    }
+//    @FXML
+//    void deleteNameFromStoppedWatching(MouseEvent event) {
+//        int selectedTVShow = listOfStoppedWatching.getSelectionModel().getSelectedIndex();
+//        listOfStoppedWatching.getItems().remove(selectedTVShow);
+//    }
 
     @FXML
     void clearWatching(MouseEvent event) {
@@ -175,6 +199,7 @@ public class ListSampleController {
             stage.close();
         }
     }
+
 }
 
 //    public void switchToHelloView(ActionEvent event) throws IOException {
@@ -228,5 +253,5 @@ public class ListSampleController {
 //            System.out.println("Вы нажали на кнопку Смотрю");
 //        });
 //    }
-}
+
 

@@ -14,17 +14,17 @@
         <AnchorPane layoutX="-5.0" layoutY="-1.0" prefHeight="22.0" prefWidth="873.0" style="-fx-background-color: #2A708C;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
       <AnchorPane layoutX="1.0" layoutY="21.0" prefHeight="58.0" prefWidth="867.0" style="-fx-background-color: #CEDEF2;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
          <children>
-            <TextField fx:id="name" layoutX="130.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Название" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="582.6">
+            <TextField fx:id="name" layoutX="130.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Название" style="-fx-background-color: transparent; -fx-border-color: #0D0D0D; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="582.6">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="year" layoutX="350.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Год" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="362.6">
+            <TextField fx:id="year" layoutX="350.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Год" style="-fx-background-color: transparent; -fx-border-color: #0D0D0D; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="362.6">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="genre" layoutX="569.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Жанр" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="143.6">
+            <TextField fx:id="genre" layoutX="569.0" layoutY="9.0" prefHeight="30.0" prefWidth="154.0" promptText="Жанр" style="-fx-background-color: transparent; -fx-border-color: #0D0D0D; -fx-border-width: 0 0 1 0;" AnchorPane.bottomAnchor="9.399999999999999" AnchorPane.rightAnchor="143.6">
                <font>
                   <Font size="18.0" />
                </font>
@@ -40,21 +40,21 @@
             </Button>
             <TabPane layoutX="172.0" layoutY="2.0" prefHeight="466.0" prefWidth="696.0" side="LEFT" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-0.39999999999997726">
               <tabs>
-                <Tab fx:id="listOfWatching" text="Смотрю">
+                <Tab text="Смотрю">
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="466.0" prefWidth="634.0">
                            <children>
-                              <Button fx:id="deleteButtonWatching" layoutX="564.0" layoutY="361.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="65.39999999999998" AnchorPane.rightAnchor="12.800000000000068">
+                              <Button fx:id="deleteButtonWatching" layoutX="564.0" layoutY="361.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="addButtonWatching" layoutX="563.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#addNameToWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="412.4" AnchorPane.rightAnchor="13.0">
+                              <Button fx:id="addButtonWatching" layoutX="563.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#addNameToWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="412.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="clearWatching" layoutX="564.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#clearWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="14.399999999999977" AnchorPane.rightAnchor="12.800000000000068">
+                              <Button fx:id="clearWatching" layoutX="564.0" layoutY="412.0" mnemonicParsing="false" onMouseClicked="#clearWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="12.800000000000068">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -74,17 +74,17 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="deleteButtonWatched" layoutX="568.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromWatched" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="301.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="deleteButtonWatched" layoutX="568.0" layoutY="124.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="addButtonWatched" layoutX="565.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#addNameToWatched" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="375.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="addButtonWatched" layoutX="565.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#addNameToWatched" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="412.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="clearWatched" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearWatched" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="226.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="clearWatched" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearWatched" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
@@ -104,17 +104,17 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Button fx:id="deleteButtonStoppedWatching" layoutX="574.0" layoutY="135.0" mnemonicParsing="false" onMouseClicked="#deleteNameFromStoppedWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="301.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="deleteButtonStoppedWatching" layoutX="574.0" layoutY="135.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Удалить" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="addButtonStoppedWatching" layoutX="571.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#addNameToStoppedWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="375.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="addButtonStoppedWatching" layoutX="571.0" layoutY="61.0" mnemonicParsing="false" onMouseClicked="#addNameToStoppedWatching" prefHeight="40.0" prefWidth="91.0" style="-fx-background-color: #CEDEF2;" text="Добавить" AnchorPane.bottomAnchor="412.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
                               </Button>
-                              <Button fx:id="clearStoppedWatching" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearStoppedWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="226.4" AnchorPane.rightAnchor="12.0">
+                              <Button fx:id="clearStoppedWatching" layoutX="564.0" layoutY="193.0" mnemonicParsing="false" onMouseClicked="#clearStoppedWatching" prefHeight="40.0" prefWidth="90.0" style="-fx-background-color: #CEDEF2;" text="Очистить" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="12.0">
                                  <font>
                                     <Font size="14.0" />
                                  </font>
