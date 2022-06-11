@@ -141,11 +141,11 @@ public class ListSampleController implements Initializable {
         listOfWatching.getItems().add(tvShows);
     }
 
-//    @FXML
-//    void deleteNameFromWatching(MouseEvent event) {
-//        int selectedTVShow = listOfWatching.getSelectionModel().getSelectedIndex();
-//        listOfWatching.getItems().remove(selectedTVShow);
-//    }
+    @FXML
+    void deleteNameFromWatching(MouseEvent event) {
+        int selectedTVShow = listOfWatching.getSelectionModel().getSelectedIndex();
+        listOfWatching.getItems().remove(selectedTVShow);
+    }
 
     @FXML
     void addNameToWatched(MouseEvent event) {
@@ -153,11 +153,11 @@ public class ListSampleController implements Initializable {
         listOfWatched.getItems().add(tvShows);
     }
 
-//    @FXML
-//    void deleteNameFromWatched(MouseEvent event) {
-//        int selectedTVShow = listOfWatched.getSelectionModel().getSelectedIndex();
-//        listOfWatched.getItems().remove(selectedTVShow);
-//    }
+    @FXML
+    void deleteNameFromWatched(MouseEvent event) {
+        int selectedTVShow = listOfWatched.getSelectionModel().getSelectedIndex();
+        listOfWatched.getItems().remove(selectedTVShow);
+    }
 
     @FXML
     void addNameToStoppedWatching(MouseEvent event) {
@@ -165,11 +165,11 @@ public class ListSampleController implements Initializable {
         listOfStoppedWatching.getItems().add(tvShows);
     }
 
-//    @FXML
-//    void deleteNameFromStoppedWatching(MouseEvent event) {
-//        int selectedTVShow = listOfStoppedWatching.getSelectionModel().getSelectedIndex();
-//        listOfStoppedWatching.getItems().remove(selectedTVShow);
-//    }
+    @FXML
+    void deleteNameFromStoppedWatching(MouseEvent event) {
+        int selectedTVShow = listOfStoppedWatching.getSelectionModel().getSelectedIndex();
+        listOfStoppedWatching.getItems().remove(selectedTVShow);
+    }
 
     @FXML
     void clearWatching(MouseEvent event) {
