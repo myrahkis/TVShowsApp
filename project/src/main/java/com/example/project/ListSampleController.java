@@ -72,7 +72,40 @@ public class ListSampleController {
     private TableView<?> listOfStoppedWatching;
 
     @FXML
+    private TableColumn<?, ?> columnGenreStopped;
+
+    @FXML
+    private TableColumn<?, ?> columnGenreWatched;
+
+    @FXML
+    private TableColumn<?, ?> columnGenreWatching;
+
+    @FXML
+    private TableColumn<?, ?> columnNameStopped;
+
+    @FXML
+    private TableColumn<?, ?> columnNameWatched;
+
+    @FXML
+    private TableColumn<?, ?> columnNameWatching;
+
+    @FXML
+    private TableColumn<?, ?> columnYearStopped;
+
+    @FXML
+    private TableColumn<?, ?> columnYearWatched;
+
+    @FXML
+    private TableColumn<?, ?> columnYearWatching;
+
+    @FXML
     private TextField name;
+
+    @FXML
+    private TextField year;
+
+    @FXML
+    private TextField genre;
 
     @FXML
     private AnchorPane scenePane;
