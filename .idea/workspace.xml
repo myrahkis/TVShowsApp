@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="379860a8-f0f0-4f22-808a-5d7cf85cdc95" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/ListSampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/ListSampleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/TVShows.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/TVShows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/helloViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/helloViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/TVShows.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/TVShows.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

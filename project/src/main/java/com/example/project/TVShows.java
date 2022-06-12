@@ -40,9 +40,8 @@ public class TVShows {
 
     @Override
     public String toString() {
-        return "TVShow:" +
-                "Название " + name.getValue() +
-                ", год " + year.getValue() +
-                ", жанр " + genre.getValue();
+        return name.getValue() + ", " +
+                year.getValue() + " год, " +
+                genre.getValue() + ";";
     }
 }

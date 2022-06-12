@@ -68,6 +68,4 @@ public class helloViewController {
         stage.setScene(scene);
         stage.show();
     }
-
-
 }
