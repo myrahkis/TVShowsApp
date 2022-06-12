@@ -5,18 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="379860a8-f0f0-4f22-808a-5d7cf85cdc95" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/ListSampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/ListSampleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/RegistrationSceneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/RegistrationSceneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/TVShows.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/TVShows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/java/com/example/project/helloViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/java/com/example/project/helloViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/src/main/resources/com/example/project/ListSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/project/src/main/resources/com/example/project/ListSample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/ListSample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/ListSample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/ListSampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/ListSampleController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/RegistrationSceneController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/RegistrationSceneController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/helloViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/helloViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/target/classes/com/example/project/TVShows.class" beforeDir="false" afterPath="$PROJECT_DIR$/project/target/classes/com/example/project/TVShows.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

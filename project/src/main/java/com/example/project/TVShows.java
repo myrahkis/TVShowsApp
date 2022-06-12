@@ -37,4 +37,12 @@ public class TVShows {
     public void setGenre(String genre) {
         this.genre = new SimpleStringProperty(genre);
     }
+
+    @Override
+    public String toString() {
+        return "TVShow:" +
+                "Название " + name.getValue() +
+                ", год " + year.getValue() +
+                ", жанр " + genre.getValue();
+    }
 }
