@@ -1,5 +1,6 @@
 package com.example.project;
 
+//imports
 import java.io.IOException;
 import java.net.URL;
 import java.util.Objects;
@@ -36,6 +37,7 @@ public class helloViewController {
     @FXML
     private Button signUpButton;
 
+    //just in case
 //    @FXML
 //    void initialize() {
 //        okayButton.setOnAction(actionEvent -> {
@@ -49,7 +51,7 @@ public class helloViewController {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
+    //private Parent root;
 
     public void switchToListSample(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("ListSample.fxml")));
@@ -66,4 +68,6 @@ public class helloViewController {
         stage.setScene(scene);
         stage.show();
     }
+
+
 }

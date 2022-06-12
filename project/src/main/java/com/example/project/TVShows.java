@@ -37,6 +37,4 @@ public class TVShows {
     public void setGenre(String genre) {
         this.genre = new SimpleStringProperty(genre);
     }
-
-
 }
