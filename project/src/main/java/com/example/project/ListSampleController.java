@@ -239,7 +239,7 @@ public class ListSampleController implements Initializable {
         } else {
             File file = fileChooser.showSaveDialog(secStage);
             if (file != null) {
-                save(file, listOfWatching.getItems());
+                save(file, observableShowsList);
             }
         }
     }
@@ -247,11 +247,11 @@ public class ListSampleController implements Initializable {
     public void save(File file, ObservableList<TVShows> tvShows) {
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(file));
-            for (TVShows tvShow : observableShowsList) {
+            for (TVShows tvShow : tvShows) {
                 bw.write(tvShow.toString());
                 bw.newLine();
             }
-            System.out.println(observableShowsList.toString());
+            System.out.println(tvShows);
             bw.close();
         } catch (IOException e) {
             System.out.println("Ошибка с файлом");
